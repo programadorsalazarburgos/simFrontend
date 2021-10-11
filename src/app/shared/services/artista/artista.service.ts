@@ -57,7 +57,7 @@ export class ArtistaService {
   //       return throwError(e);
   //     })
   //   );
-  // }//
+  // }/////JSB2
 
   getEventos(): Observable<any> {
     return this.http
