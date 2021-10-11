@@ -1,0 +1,55 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xl-7">
+      <img class="bg-img-cover bg-center" src="../assets/images/login/2.jpg" alt="looginpage" />
+    </div>
+    <div class="col-xl-5 p-0">
+      <div class="login-card">
+        <div>
+          <div>
+            <a class="logo text-start" href="index.html"><img class="img-fluid for-light"
+                src="../assets/images/logo/login.png" alt="looginpage" /><img class="img-fluid for-dark"
+                src="../assets/images/logo/logo_dark.png" alt="looginpage" /></a>
+          </div>
+          <div class="login-main">
+            <form class="theme-form" [formGroup]="loginForm">
+              <h4>Iniciar sesión en la cuenta</h4>
+              <p>Ingrese su correo electrónico y contraseña para iniciar sesión</p>
+              <div class="form-group">
+                <label class="col-form-label">Correo</label>
+                <input class="form-control" type="email" required="" placeholder="app@yourmail.com" formControlName="email">
+                  <div *ngIf="loginForm.controls.email.touched && loginForm.controls.email.errors?.required"
+                      class="text text-danger mt-1">
+                      Correo es requerido
+                  </div>
+                  <div *ngIf="loginForm.controls.email.touched && loginForm.controls.email.errors?.email"
+                      class="text text-danger mt-1">
+                      Invalido Correo
+                  </div>
+              </div>
+              <div class="form-group">
+                <label class="col-form-label">Contraseña</label>
+                <input class="form-control" [type]="show ? 'text' : 'password'" formControlName="password" required="" placeholder="*********">
+                <div class="show-hide" (click)="showPassword()" *ngIf="!show"><span class="show"></span></div>
+                <div class="show-hide" (click)="showPassword()" *ngIf="show"><span class="Hide"></span></div>
+                <div *ngIf="loginForm.controls.password.touched && loginForm.controls.password.errors?.required"
+                      class="text text-danger mt-1">
+                      Contraseña es requerida
+                </div>
+              </div>
+              <div class="form-group mb-0">               
+                <button class="btn btn-primary btn-block"
+                  [class.loader--text]="authService.showLoader"
+                  [disabled]="!loginForm.valid || authService.showLoader"
+                  (click)="login()"
+                  type="button"><span>{{ authService.showLoader ? '' : 'Login' }}</span>
+                </button>
+              </div>            
+              <p class="mt-4 mb-0 text-center">¿No tienes cuenta?<a class="ms-2" href="register">Crear una cuenta</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

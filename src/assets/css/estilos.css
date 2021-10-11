@@ -1,0 +1,317 @@
+
+/* CSS Document 
+
+Estilos Crea
+*/
+body {font-family: 'open_sansregular'; background: #f2f2f2}
+.centro {text-align: center}
+.blanco {color: #fff !important}
+.azulBack { color: #726be3 !important}
+.azulFront { color: #23bce8 !important}
+.azulFront2 { color: #016990 !important}
+
+.cl {clear: both}
+.fl {float: left}
+.fr {float: right !important}
+.pad {padding: 10px}
+.pad20 {padding:20px}
+.pad50 {padding:50px}
+.padBT {padding: 0 20px; float: left}
+.separador {margin: 40px}
+
+.btn-primary { background: #7259f7; border-color: #7259f7; margin-bottom: 15px}
+
+.btn-primaryFront { background: #04b3e2 !important; border-color: #04b3e2 !important; margin-bottom: 15px}
+.btn-lg {/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#c150cc+0,726be3+100 */
+background: #c150cc; /* Old browsers */
+background: -moz-linear-gradient(top,  #c150cc 0%, #726be3 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #c150cc 0%,#726be3 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #c150cc 0%,#726be3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c150cc', endColorstr='#726be3',GradientType=0 ); /* IE6-9 */
+border:none;font-family: 'open_sanssemibold'; padding-left:30px; padding-right: 30px }
+.btn-lg a:hover {background-color: #c150cc !important; }
+
+.btn-primary:hover {
+	color: #fff;
+	background-color: #c150cc;
+	border-color: #c150cc
+}
+
+.responsiveImagen {
+  width: 100%;
+  height: auto;
+}
+
+
+.bgHeadFront{
+background: #03adde; /* Old browsers */
+background: -moz-linear-gradient(left,  #03adde 0%, #01688f 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #03adde 0%,#01688f 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #03adde 0%,#01688f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03adde', endColorstr='#01688f',GradientType=1 ); /* IE6-9 */
+
+color: #fff; padding:10px 20px;  background-position: center center;
+}
+
+.bgHead {
+background: #6f6ce4; 
+background: -moz-linear-gradient(left,  #6f6ce4 0%, #b953ce 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #6f6ce4 0%,#b953ce 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #6f6ce4 0%,#b953ce 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6f6ce4', endColorstr='#b953ce',GradientType=1 ); /* IE6-9 */
+color: #fff; padding:10px 20px;  background-position: center center;
+}
+.logoIdartes {float: left}
+.iconosR {float: right; padding-top: 10px;}
+.iconosR img {padding-left:30px}
+.nombreUsuario {float: right; color: #fff; font-size: 22px;  font-family: 'open_sansbold'; line-height: 22px; margin: 0 50px; padding-top: 5px }
+.nombreUsuario span {display: block; font-size:18px;font-family: 'open_sansregular'; }
+.nombreUsuario img {padding-right:10px;}
+
+.tNombre {color: #726be3; font-size:35px; font-family: 'open_sansbold';  line-height:35px; margin: 30px 0}
+.tNombre span {display: block;font-family: 'open_sansregular'; color: #a858d3; font-size:30px;  }
+.tit1 { color: #726be3; font-size:30px; font-family: 'open_sansbold';  line-height:35px;}
+.tit2 { color: #726be3; font-size:22px; font-family: 'open_sansbold';  line-height:25px; padding: 10px 0; margin-top: 10px}
+
+
+
+.txtBio { text-align: justify; color:#555}
+.editBio {font-family: 'open_sansbold'; color: #726be3;  font-size: 20px; margin-top: 10px}
+.editBio a {color: #726be3;}
+
+.MiCalificacion {background: #c150cc; /* Old browsers */
+background: -moz-linear-gradient(top,  #c150cc 0%, #726be3 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #c150cc 0%,#726be3 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #c150cc 0%,#726be3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c150cc', endColorstr='#726be3',GradientType=0 ); /* IE6-9 */
+border:none;font-family: 'open_sanssemibold'; padding:8px 20px; color: #fff; width:256px; float: left; margin-right:5px; margin-bottom: 10px; border-radius: 5px;}
+
+.MiCalificacionFront {/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#03adde+0,01688f+100 */
+background: #03adde; /* Old browsers */
+background: -moz-linear-gradient(top,  #03adde 0%, #01688f 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #03adde 0%,#01688f 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #03adde 0%,#01688f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03adde', endColorstr='#01688f',GradientType=0 ); /* IE6-9 */
+
+border:none;font-family: 'open_sanssemibold'; padding:8px 20px; color: #fff; width:370px; float: left; margin-right:5px; margin-bottom: 10px; border-radius: 5px;}
+
+.calificaStar {width:30px; height:30px; float:left; margin:0 5px}	
+.calificaStar a {background:url(../img/estrella-califica.png);background-position:top; display:block; height:30px;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    -ms-transition: none;
+    transition: none;}
+.calificaStar a:hover{ background-position:bottom;     -webkit-transition: all 0.3s ease-out;
+    -moz-transition:none;
+    -o-transition:none;
+    -ms-transition:none;
+    transition:none}
+
+.calificaStarON a {background:url(../img/estrella-califica.png);background-position:top; display:block; height:30px;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    -ms-transition: none;
+    transition: none;}
+
+.cajaPOrtafolio {background: #e9e9e9; width: 100%; padding:20px 0; margin: 20px 0}
+
+.cajaSombra {    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15); padding: 20px; margin: 20px 0; border-radius:5px}
+
+.cajaColor {background: #c150cc; color: fff; /* Old browsers */
+background: -moz-linear-gradient(top,  #c150cc 0%, #726be3 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #c150cc 0%,#726be3 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #c150cc 0%,#726be3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c150cc', endColorstr='#726be3',GradientType=0 ); /* IE6-9 */
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15); padding: 20px; margin: 20px 0; border-radius:5px}
+.cajaColorFront {background: #03adde; /* Old browsers */
+background: -moz-linear-gradient(top,  #03adde 0%, #01688f 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #03adde 0%,#01688f 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #03adde 0%,#01688f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03adde', endColorstr='#01688f',GradientType=0 ); /* IE6-9 */
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15); padding: 20px; margin: 20px 0; border-radius:5px}
+
+.cajaDestacado {background:url(../img/bg-pared.jpg);	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15); padding: 40px; margin: 20px 0; border-radius:5px}
+
+.cajaDestacadoFront {background:url("../img/bg-paredFront.jpg");	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15); padding: 40px; margin: 20px 0; border-radius:5px}
+
+.cajaColor2 { background: #965fd9;  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15); padding: 20px; margin: 20px 0; border-radius:5px}
+
+.cajaColor2Front { background: #03adde;  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15); padding: 20px; margin: 20px 0; border-radius:5px}
+
+
+/********EVENTOS********/
+.eventoL {float: left; width:130px; margin-right: 15px}
+.eventoL .fechaDia {font-family: 'open_sansbold'; font-size:55px; color: #555555; float: left; line-height:50px; padding-right:10px}
+.eventoL .fechaMes {font-family: 'open_sansbold'; font-size:25px; color: #555555; float: left; line-height:25px}
+.eventoHora {color: #746ae2; text-align: center;font-family: 'open_sanssemibold'; margin-bottom: 10px }
+.eventoInscritos {color:#ac57d2;font-family: 'open_sanssemibold'; text-align: center;}
+.eventoTit { color: #ac57d2;font-family: 'open_sansbold'; font-size: 22px}
+
+.eventoC {float: left;width:400px}
+.eventoTXT {color: #737171}
+.eventoTXT strong {font-family: 'open_sansbold'}
+.eventoTXT a {color: #ac57d2}
+
+.eventoIMG {float: right; text-align: center}
+
+/********COLECTIVOS********/
+.cajaColectivo { margin: 20px 0; position: relative; width: 100%}
+.cajaColectivo img {  width: 100%; height: auto;}
+.nombreColectivo {background:rgba(148, 95, 217, 0.8); color: #fff; position: absolute; bottom: 0; width: 100%; font-size: 20px}
+
+.categorias {color: #555555}
+.categorias a {color: #555555; background: #e3e3e3; padding:5px; margin:5px !important; float: left}
+
+.redesS a img{ padding: 10px}
+.contactTXT {color: #fff; font-size:18px; margin-top: 20px}
+
+.videoDestacado {border: 4px solid #fff;}
+.linkDestacado {font-size: 18px}
+.linkDestacado a {color: #fff; display: block; padding: 5px}
+.Espacio {font-size: 18px; margin-top: 10px}
+.Espacio img {padding: 10px;  width: 100%;
+  height: auto;}
+.Espacio a{color: #fff}
+
+.imgCajaSombra {font-size: 18px; margin-top: 10px}
+.imgCajaSombra img {padding: 10px;  width: 100%;
+  height: auto;}
+.imgCajaSombra a{color: #965fd9}
+
+.imgCajaEmpresa {font-size: 18px; margin-top: 10px; text-align: center !important}
+.imgCajaEmpresa img {padding: 10px; display: block; text-align: center !important}
+.imgCajaEmpresa a{color: #965fd9; text-align: center !important}
+
+.siguea {color: #ab2eba; font-size: 14px}
+.siguea span { font-family: 'open_sansbold'; display: block; font-size:18px}
+
+.imgArtS {float: left;}
+.artistaSimiliar {margin: 20px 0}
+.txtArtS { float: left; font-size: 20px; padding-left: 10px; font-family: 'open_sansbold';color: #fff; line-height: 20px; padding-top: 20px}
+.txtArtS a {color: #fff}
+.txtArtS span {font-size: 16px; font-family: 'open_sansregular'; display: block}
+.txtArtSeg {font-size: 16px; padding-top:20px }
+
+.img100Caja {margin: 20px 0}
+.img100 {float: left; width: 100px}
+.img100 img {width: 100px;}
+.txtimg100 { float:left; font-size: 20px; padding-left: 15px; font-family: 'open_sanssemibold';color: #555; line-height: 20px; padding-top:40px; width: 300px; text-align: left;}
+.txtimg100 a {color: #555}
+.txtimg100 span {font-size: 16px; font-family: 'open_sansregular'; display: block}
+
+.footerIdartes {background: #e5e5e5; padding: 25px; border-top:4px #ab2eba solid}
+.footerIdartesFront {background: #e5e5e5; padding: 25px; border-top:4px #0282ad solid}
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+	.tit1 {  font-size:25px;  line-height:30px;}
+
+	.txtBio {font-size: 15px;}
+.eventoC {float: left;width:320px}
+.eventoTXT { font-size:14px; color: #737171}
+.contactTXT {color: #fff; font-size:16px; margin-top: 20px}
+	
+	.txtimg100 { float:left; font-size: 16px; padding-left: 10px; font-family: 'open_sanssemibold';color: #555; line-height: 20px; padding-top: 20px; width: 160px; text-align: left}	
+
+	.imgArtS {float:inherit; text-align: center}
+.txtArtS { float: inherit; font-size: 20px; padding-left: 10px; font-family: 'open_sansbold';color: #fff; line-height: 20px; padding-top:5px; text-align: center; width: 100%}
+}
+
+@media screen and (min-width: 280px) and (max-width: 768px) {
+	
+	.logoIdartes {float: inherit}
+	
+	.iconosR {float: inherit; padding-top: 10px;}
+.iconosR img {padding-left:20px}
+.nombreUsuario {float: right; color: #fff; font-size:20px;  font-family: 'open_sansbold'; line-height: 22px; margin: 10px 10px; padding-top: 5px; width: 100%; }
+.nombreUsuario span {display: block; font-size:16px;font-family: 'open_sansregular'; }
+.nombreUsuario img {padding-right:10px;}
+
+	
+.eventoL {float: inherit; width: 100%; margin-right: 0px; }
+.eventoL .fechaDia {font-family: 'open_sansbold'; font-size:25px; color: #555555; float: left; line-height:25px; padding-right:10px}
+.eventoL .fechaMes {font-family: 'open_sansbold'; font-size:25px; color: #555555; float: left; line-height:25px}
+.eventoHora {color: #746ae2; text-align: left;font-family: 'open_sanssemibold'; margin-bottom:5px }
+.eventoInscritos {color:#ac57d2;font-family: 'open_sanssemibold'; text-align:left; margin-bottom: 10px}
+	
+.eventoC {float: inherit;width:100%}
+.eventoIMG {float: inherit; margin-top: 10px}
+	.separadia {display: none}	
+	.categorias {font-size: 14px}	
+	
+	.imgArtS {float:inherit; text-align: center}
+.txtArtS { float: inherit; font-size: 20px; padding-left: 10px; font-family: 'open_sansbold';color: #fff; line-height: 20px; padding-top:5px; text-align: center; width: 100%}	
+	
+.img100 {float: inherit; width:100%}
+.txtimg100 { float: inherit; font-size:16px; padding-left: 15px; font-family: 'open_sanssemibold';color: #555; line-height: 20px; padding-top:1px; width:100%; text-align:center;}
+	
+	
+	
+ }	
+
+
+/*****************FUENTES**********************/
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../fuentes/opensans-bold-webfont.woff2') format('woff2'),
+         url('../fuentes/opensans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansitalic';
+    src: url('../fuentes/opensans-italic-webfont.woff2') format('woff2'),
+         url('../fuentes/opensans-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('../fuentes/opensans-light-webfont.woff2') format('woff2'),
+         url('../fuentes/opensans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fuentes/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fuentes/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('../fuentes/opensans-semibold-webfont.woff2') format('woff2'),
+         url('../fuentes/opensans-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

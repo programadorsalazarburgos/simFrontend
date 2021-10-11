@@ -1,0 +1,449 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 bgHead">
+            <div class="logoIdartes"><img src="assets/img/idartes-logo.png" alt="Idartes " /></div>
+
+            <div class="nombreUsuario">
+                <div class="fl"><img src="../img/ico-usuario.png" alt="" /></div>
+                <div class="fl">María Camila <span>Mi Perfil</span></div>
+                <div class="cl"></div>
+            </div>
+
+            <div class="iconosR"><img src="../img/ico_lupa.png" alt="" /><img src="../img/ico_notificacion.png"
+                    alt="" /><img src="../img/ico_estrella.png" alt="" /><img src="../img/ico_mensaje.png" alt="" />
+            </div>
+
+            <div class="cl"></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">
+            <div class="fotoEvento">
+
+                <div class="btSubirFoto"><a class="btn btn-primary btn-lg centro" href="#" role="button"><i
+                            class="fas fa-upload"></i> Subir Foto</a></div>
+            </div>
+
+            <div class="separador"></div>
+            <div class="cajaSombra centro">
+                <div class="titEvento">Precio del evento</div>
+                <div class="subtEvento">Selcciona una opción:</div>
+                <div class="pad"></div>
+
+                <form>
+                    <div class="form-group">
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Gratis</option>
+                            <option>Donación</option>
+                            <option>Pago</option>
+
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Precio">
+                    </div>
+                </form>
+            </div>
+
+            <div class="separador"></div>
+            <div class="cajaSombra">
+                <div class="titEvento centro">Caracterización del evento</div>
+                <div class="subtEvento ">Caracteriza tu evento en palabras clave, es muy importante para clasificarlo y
+                    ser encontrado fácilmente por parte de los usuarios de la plataforma:</div>
+                <div class="pad"></div>
+                <div class="subtEventoB colorEventos">Área</div>
+                <div class="subtEvento">Selecciona el área artística y cultural:</div>
+                <form>
+                    <div class="form-group">
+                        <select class="form-control" id="personality">
+                            <option value=" 0" disabled>Areas</option>
+                            <option>Musica</option>
+                            <option>Teatro</option>
+                        </select>
+                    </div>
+                </form>
+                <div class="pad"></div>
+                <div class="subtEventoB colorEventos">Sub-Área</div>
+                <div class="subtEvento">Selecciona el sub área artística y cultural:</div>
+                <form>
+                    <div class="form-group">
+                        <ng-select [items]="cars" bindLabel="name" placeholder="Selecciona sub Áreas" appendTo="body"
+                            [multiple]="true" [(ngModel)]="subArea">
+                        </ng-select>
+                    </div>
+                </form>
+            </div>
+
+            <div class="separador"></div>
+            <div class="cajaSombra">
+                <div class="titEvento centro">Tipo evento</div>
+                <div class="subtEvento">Selecciona el tipo de evento en la siguiente lista, puedes seleccionar máximo 3.
+                </div>
+                <div class="pad"></div>
+
+                <form>
+                    <div class="form-group">
+                        <select class="form-control" id="">
+                            <option>Tipo de evento 1</option>
+                            <option>Tipo de evento 2</option>
+                            <option>Tipo de evento 3</option>
+                            <option>Tipo de evento 4</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="" placeholder="Selecciona hasta 3 tipos de evento">
+                    </div>
+                </form>
+            </div>
+
+            <div class="separador"></div>
+            <div class="cajaColor">
+                <div class="titEvento centro blanco">Etiquetas</div>
+                <div class="subtEvento blanco">Escribe palabras adicionales, recuerda que estas palabras van a ser clave
+                    en los buscadores de la plataforma.</div>
+                <div class="pad"></div>
+
+                <form>
+                    <div class="form-group">
+                        <tag-input [(ngModel)]='items' [maxItems]='5' theme='dark'></tag-input>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="col-md-9">
+            <div class="tNombre colorEventos">Crear un nuevo evento <i class="far fa-calendar-alt"></i></div>
+            <div class="pad"></div>
+
+            <div>
+                <div class="titEvento">Título del evento</div>
+                <div class="subtEvento">Escribe el título del evento, debe ser llamativo y corto.</div>
+                <div class="pad5"></div>
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id=""
+                            placeholder="Título del evento (Máximo 70 carecteres)">
+                    </div>
+                </form>
+                <div class="pad"></div>
+            </div>
+
+
+            <div>
+                <div class="titEvento">Subtitulo del evento</div>
+                <div class="subtEvento">Escribe el subtitulo del evento, aquí puedes dar algunos detalles a los
+                    asistentes.</div>
+                <div class="pad5"></div>
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id=""
+                            placeholder="Subtitulo del evento (Máximo 70 carecteres)">
+                    </div>
+                </form>
+                <div class="pad"></div>
+            </div>
+
+            <div>
+                <div class="titEvento">Organizador</div>
+                <div class="pad5"></div>
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="" placeholder="Nombre del organizador">
+                    </div>
+                </form>
+                <div class="pad"></div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="cajaSombra">
+                        <div class="titEvento centro">Fecha del evento</div>
+                        <div class="subtEvento centro">Registra la fecha y hora de tu evento</div>
+                        <div class="pad20"></div>
+                        <div class="crearEvL">
+
+                            <form>
+                                <label for="fechaI">Fecha de inicio</label>
+                                <input id="fechaI" type="date" class="mi_calendario form-control" value="Fecha incio" />
+
+                                <div class="pad"></div>
+
+                                <label for="fechaF">Fecha de fin</label>
+                                <input id="fechaF" type="date" class="mi_calendario form-control" value="Fecha fin" />
+
+                                <div class="pad"></div>
+
+
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox"> Evento periódico
+                                    </label>
+                                </div>
+
+
+                            </form>
+
+
+                        </div>
+                        <div class="crearEvR">
+                            <form>
+                                <div class="form-group">
+                                    <label for="horaI">Hora Inicio</label>
+                                    <input type="time" class="form-control" id="horaI" placeholder="Hora inicio">
+                                    <div class="pad"></div>
+                                    <label for="horaF">Hora Fin</label>
+                                    <input type="time" class="form-control" id="horaF" placeholder="Hora fin">
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox"> ¿Se repite a la semana?
+                                    </label>
+                                </div>
+                            </form>
+
+                        </div>
+                        <div class="cl"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="cajaSombra">
+                        <form role="form">
+                            <div class="titEvento centro">Tipo de público</div>
+                            <div class="subtEvento centro">Identifica el público al que va dirigido tu evento, esto
+                                ayudará a llegar más fácil a tus asistentes. </div>
+                            <div class="pad"></div>
+                            <div class="subtEvento">Edad</div>
+                            <div class="pad"></div>
+                            <div class="crearEvL">
+
+                                <input type="radio" name="option" id="radio1" />
+                                <label for="radio1">Infancia 0-3 años</label><br />
+                                <input type="radio" name="option" id="radio2" />
+                                <label for="radio2">Niñez 3-12 años</label><br />
+                                <input type="radio" name="option" id="radio3" />
+                                <label for="radio3">Adolescencia 12-18 años</label><br />
+                                <input type="radio" name="option" id="radio4" />
+                                <label for="radio4">Adolescencia 12-18 años</label>
+
+                            </div>
+                            <div class="crearEvR">
+
+                                <input type="radio" name="option" id="radio5" />
+                                <label for="radio5">Adulto 28-59 años</label><br />
+
+                                <input type="radio" name="option" id="radio6" />
+                                <label for="radio6">Adultio mayor + 60 años</label><br />
+
+                                <input type="radio" name="option" id="radio7" />
+                                <label for="radio7">Todo público</label><br />
+
+
+                            </div>
+                            <div class="cl"></div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="row cajaSombra">
+                        <div class="col-md-12">
+                            <div class="titEvento centro">Entorno del evento</div>
+                            <div class="subtEvento centro">Cuéntale a tus asistentes donde va a suceder el evento,
+                                puedes seleccionar Presencial, Virtual o Mixto (Presencial y virtual), en cada caso es
+                                importante que les des todos los detalles a tu público.</div>
+                            <div class="pad"></div>
+                            <div class="centro">
+                                <a class="btn btn-primary centro" href="#" role="button">Presencial</a>&nbsp;
+                                <a class="btn btn-primary centro" href="#" role="button">Virtual</a>&nbsp;
+                                <a class="btn btn-primary centro" href="#" role="button">Mixto</a>
+                            </div>
+
+                        </div>
+                        <div class="col-md-12">
+                            <div class="cajaInfoEventoL">
+                                <div class="titEvento centro">Información Presencial</div>
+                                <div class="pad"></div>
+                                <div class="subtEventoB">Ubicación</div>
+                                <div class="subtEvento">Selecciona en el mapa la ubicación de tu evento, esto permitirá
+                                    a tus asistentes ubicarlo fácilmente y utilizar los servicios de las rutas:</div>
+                                <div class="cajaMapaEvento">
+                                    <div class="row leaflet-custom">
+                                        <div class="card-body">
+                                            <div class="map-height" leaflet [leafletOptions]="options4"
+                                                (leafletMapReady)="onMapReady4($event)"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="subtEventoB">Dirección</div>
+                                <div class="subtEvento">Escribe la dirección exacta donde tu evento va a suceder tu
+                                    evento:</div>
+                                <div class="pad"></div>
+                                <div>
+                                    <form class="form-inline">
+                                        <input type="email" class="form-control inputDirGr" id=""
+                                            placeholder="CL/KR/TV">
+                                        <input type="email" class="form-control inputDir" id="" placeholder="">
+                                        <input type="email" class="form-control inputDir" id="" placeholder="">
+                                        <div class="subtEventoB">#</div>
+                                        <input type="email" class="form-control inputDir" id="" placeholder="">
+                                        <input type="email" class="form-control inputDir" id="" placeholder="">
+                                        <div class="subtEventoB">-</div><br>
+                                        <input type="email" class="form-control inputDir" id="" placeholder="">
+                                        <input type="email" class="form-control inputDir" id="" placeholder="">
+                                    </form>
+                                </div>
+                                <div class="pad"></div>
+                                <div class="subtEventoB">Ciudad</div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="" placeholder="Selecciona la ciudad">
+                                </div>
+                                <div class="subtEventoB">Lugar</div>
+                                <div class="subtEvento">Puedes vincular el evento a un lugar previamente creado en la
+                                    plataforma, así los asistentes pueden ver toda la información del lugar, seguirlo y
+                                    calificarlo.</div>
+                                <div class="pad5"></div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id=""
+                                        placeholder="Escribe el lugar y seleccionalo en los resultados">
+                                </div>
+                                <div class="subtEvento">Si no encontraste el lugar, puedes sugerir su creación aquí.
+                                </div>
+                                <div class="pad5">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="" placeholder="Escribe el lugar">
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="cajaInfoEventoR">
+                                <div class="titEvento centro">Información Virtual</div>
+                                <div class="pad"></div>
+                                <div class="subtEventoB">Link página Oficial</div>
+                                <div class="subtEvento">Ingresa el link de la página oficial donde los asistentes pueden
+                                    dirigirse a tu evento virtual:</div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id=""
+                                        placeholder="Ingrese el link de la página oficial">
+                                </div>
+
+                                <div class="pad"></div>
+                                <div class="subtEventoB">Link de transmisión</div>
+                                <div class="subtEvento">Ingresa el link de la transmisión del evento, si aún no cuentas
+                                    con el puedes agregarlo más adelante.</div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id=""
+                                        placeholder="Ingrese el link de la transmisión">
+                                </div>
+
+                                <div class="pad"></div>
+                                <div class="subtEventoB">Link comunidad digital</div>
+                                <div class="subtEvento">Ingresa un link adicional donde tus asistentes y comunidad
+                                    pueden encontrarse (canal, blog, etc.)</div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="" placeholder="Link de la comunidad">
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="cajaSombra">
+                                <div class="titEvento centro">Información Evento</div>
+                                <div class="subtEvento">Personaliza la descripción adicional de tu evento, escribe
+                                    detalles a los asistentes del evento. Puedes adicionar cajas de texto o ingresar
+                                    enlaces de videos para insertar en la descripción del evento.</div>
+                                <div class="pad"></div>
+
+                                <div class="form-group">
+
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="card-header">
+                                                    <h5>Descripción Evento</h5>
+                                                </div>
+                                                <div class="card-body">
+                                                    <angular-editor [(ngModel)]="htmlContent" [config]="config">
+                                                    </angular-editor>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                                <div class="cl"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 centro">
+                            <a class="btn btn-primary btn-lg centro" href="#" role="button">Cancelar</a>&nbsp;
+                            <a class="btn btn-primary btn-lg centro" href="#" role="button">Guardar</a>&nbsp;
+                            <a class="btn btn-primary btn-lg centro" href="#" role="button">Publicar</a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <div class="cl"></div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <!--/*	  Footer*/-->
+    <div class="row">
+
+        <div class="col-md-12 footerIdartes">
+            Logos Footer
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <script>
+        $(".mi_calendario").datepicker({
+            // Formato de la fecha
+            dateFormat: "dd/mm/yy",
+            // Primer dia de la semana - lunes
+            firstDay: 1,
+            // Días largo traducido
+            dayNames: ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"],
+            // Dias cortos traducido
+            dayNamesMin: ["Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sa"],
+            // Nombres largos de los meses traducido
+            monthNames: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
+            // Nombres cortos de los meses traducido 
+            monthNamesShort: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dec"],
+            // Al selecconar fecha, se escribe en el campo de texto
+            onSelect: function (dateText) {
+                $('#fecha').val(dateText);
+            }
+        });
+    </script>
+</div>

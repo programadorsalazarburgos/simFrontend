@@ -1,0 +1,34 @@
+<ul class="horizontal-menu">
+
+  <li class="level-menu">
+      <ul class="header-level-menu menu-to-be-close" [class]="navServices.levelMenu ? 'd-block' : 'd-none'">
+      <li *ngFor="let levelmenuitem of levelmenuitems">
+        <!-- sub -->
+        <ul class="header-level-sub-menu" *ngIf="levelmenuitem.children">
+          <li *ngFor="let childrenItem of levelmenuitem.children">
+            <!-- Link -->
+            <a [routerLink]="!childrenItem.type ? null : [childrenItem.path]"
+              *ngIf="childrenItem.type === 'link'" routerLinkActive="active"
+              [routerLinkActiveOptions]="{exact: true}">
+              <app-feather-icons [icon]="childrenItem.icon"></app-feather-icons>
+              <span>{{childrenItem.title}}</span>
+            </a>
+            <!-- External Link -->
+            <a href="{{ !childrenItem.type ? null : childrenItem.path }}"
+              *ngIf="childrenItem.type === 'extLink'" routerLinkActive="active"
+              [routerLinkActiveOptions]="{exact: true}">
+              <app-feather-icons [icon]="childrenItem.icon"></app-feather-icons>
+              <span>{{childrenItem.title}}</span>
+            </a>
+            <!-- External Tab Link -->
+            <a href="{{ !childrenItem.type ? null : childrenItem.path }}" target="_blank"
+              *ngIf="childrenItem.type === 'extTabLink'">
+              <app-feather-icons [icon]="childrenItem.icon"></app-feather-icons>
+              <span>{{childrenItem.title}}</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>

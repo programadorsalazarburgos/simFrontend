@@ -1,0 +1,502 @@
+#my-strictly-unique-vue-upload-multiple-image {
+    font-family: "Avenir", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+  }
+  
+  h1,
+  h2 {
+    font-weight: normal;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  a {
+   
+  }
+  
+  .modal-content {
+    width: 100% !important;
+    position: absolute !important;
+  }
+  
+  .mostrar {
+    display: block !important;
+    opacity: 1 !important;
+    position: absolute !important;
+    background-color: #3c29297a !important;
+    height: 100vh;
+  }
+  
+  .div-error {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .text-error {
+    color: red !important;
+    font-weight: bold;
+  }
+  
+  .modal-content {
+    top: 37px !important;
+  }
+  
+  @media (max-width: 768px) {
+    .mostrar {
+      height: 150%;
+    }
+  }
+  
+  .drag-text {
+    display: none;
+  }
+  
+  .browse-text {
+    display: none;
+  }
+  
+  .image-list-item {
+    display: none !important;
+  }
+  
+  .image-primary {
+    display: none !important;
+  }
+  
+  .vue-lightbox-figure {
+    position: relative;
+    top: 253px;
+  }
+  
+  .drag-text {
+    display: none;
+  }
+  
+  .browse-text {
+    display: none;
+  }
+  
+  .image-list-item {
+    display: none !important;
+  }
+  
+  .image-primary {
+    display: none !important;
+  }
+  
+  .vue-lightbox-figure {
+    position: relative;
+    top: 183px;
+  }
+  
+  .vue-lightbox-close {
+    top: 362px !important;
+    background: aquamarine !important;
+    left: 42px !important;
+  }
+  
+  .image-edit {
+    display: none !important;
+  }
+  
+  .image-icon-info {
+    display: none !important;
+  }
+  
+  .user-profile .hovercard .user-image .avatar img {
+    width: 228px !important;
+    height: 260px !important;
+    max-width: 555px !important;
+    max-height: 300px !important;
+    border-radius: 0% !important;
+    border: 7px solid #fff;
+  }
+  
+  .user-profile .hovercard .user-image .icon-wrapper {
+    position: absolute !important;
+    bottom: -15px !important;
+    left: 41% !important;
+  }
+  
+  .flex-column {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+    display: none;
+  }
+  
+  .img-fluidP {
+    max-width: 85%;
+    height: auto;
+    margin-top: 3rem !important;
+  }
+  
+  .img-fluidEvent {
+    max-width: 50%;
+    height: auto;
+  }
+  
+  .title-portafolio {
+    padding-left: 12px;
+    padding-top: 5px;
+  }
+  
+  .ec-stars-wrapper {
+    /* Espacio entre los inline-block (los hijos, los `a`) 
+  
+     http://ksesocss.blogspot.com/2012/03/display-inline-block-y-sus-empeno-en.html */
+    font-size: 0;
+    /* Podríamos quitarlo, 
+  
+  pero de esta manera (siempre que no le demos padding), 
+  
+  sólo aplicará la regla .ec-stars-wrapper:hover a cuando
+  
+  también se esté haciendo hover a alguna estrella */
+    display: inline-block;
+  }
+  
+  .ec-stars-wrapper a {
+    text-decoration: none;
+    display: inline-block;
+    /* Volver a dar tamaño al texto */
+    font-size: 32px;
+    font-size: 2rem;
+  
+    color: #888;
+  }
+  
+  .ec-stars-wrapper:hover a {
+    color: rgb(39, 130, 228);
+  }
+  
+  /*
+   * El selector de hijo, es necesario para aumentar la especifidad
+   */
+  .ec-stars-wrapper > a:hover ~ a {
+    color: #888;
+  }
+  
+  @media only screen and (min-width: 1281px) and (max-width: 1536px) {
+    .event {
+      position: relative;
+      top: -1053px !important;
+    }
+  }
+  
+  @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+    .event {
+      position: relative;
+      top: -1086px !important;
+    }
+  }
+  
+  .form-group.input-material {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    /* textarea label */
+  }
+  
+  .form-group.input-material label {
+    color: #327ad5;
+    top: -20px;
+    transition: 0.2s ease all;
+    font-size: 14px;
+  }
+  
+  .form-group.input-material textarea.form-control ~ label {
+    bottom: 90%;
+    bottom: calc(100% - 38px);
+  }
+  
+  .form-group.input-material .form-control,
+  .form-group.input-material .form-select {
+    border: none;
+    border-bottom: 2px solid #d1cdff;
+    border-radius: 0px;
+    background-color: transparent;
+    padding-left: 5px;
+    box-shadow: none;
+    /* required fields */
+    /* active state */
+    /* invalid state */
+  }
+  
+  .form-group.input-material .form-control:required ~ label::after,
+  .form-group.input-material .form-select:required ~ label::after {
+    content: "*";
+    color: #dc3545;
+    padding-left: 2px;
+    font-size: 0.8em;
+  }
+  
+  .form-group.input-material .form-control:focus,
+  .form-group.input-material .form-control[value]:not([value=""]),
+  .form-group.input-material .form-select:focus,
+  .form-group.input-material .form-select[value]:not([value=""]) {
+    border-bottom-color: #007bff;
+    color: #000;
+  }
+  
+  .form-group.input-material .form-control:focus ~ label,
+  .form-group.input-material .form-control[value]:not([value=""]) ~ label,
+  .form-group.input-material .form-select:focus ~ label,
+  .form-group.input-material .form-select[value]:not([value=""]) ~ label {
+    top: unset;
+    bottom: 100%;
+    bottom: calc(100% - 16px);
+    font-size: 14px;
+    color: #007bff;
+    font-weight: 500;
+  }
+  
+  .form-group.input-material .form-control:focus.invalid,
+  .form-group.input-material .form-control.invalid,
+  .form-group.input-material .form-control:focus.parsley-error,
+  .form-group.input-material .form-control[value]:not([value=""]).parsley-error,
+  .form-group.input-material .form-select:focus.invalid,
+  .form-group.input-material .form-select.invalid,
+  .form-group.input-material .form-select:focus.parsley-error,
+  .form-group.input-material .form-select[value]:not([value=""]).parsley-error {
+    border-bottom-color: #dc3545;
+  }
+  
+  .form-group.input-material .form-control:focus.invalid ~ label,
+  .form-group.input-material .form-control.invalid ~ label,
+  .form-group.input-material .form-control:focus.parsley-error ~ label,
+  .form-group.input-material
+    .form-control[value]:not([value=""]).parsley-error
+    ~ label,
+  .form-group.input-material .form-select:focus.invalid ~ label,
+  .form-group.input-material .form-select.invalid ~ label,
+  .form-group.input-material .form-select:focus.parsley-error ~ label,
+  .form-group.input-material
+    .form-select[value]:not([value=""]).parsley-error
+    ~ label {
+    color: #dc3545;
+  }
+  
+  .form-group.input-material .form-select {
+    background-position: right 0 center;
+    padding-left: 0;
+  }
+  
+  .form-group.input-material .parsley-errors-list {
+    color: #dc3545;
+    list-style: none;
+    font-size: 0.7em;
+    padding-left: 5px;
+    position: absolute;
+    top: 107%;
+  }
+  
+  .multiselect__tags {
+    min-height: 40px;
+    display: block;
+    padding: 8px 40px 0 8px;
+    border-radius: 0px;
+    /* border: 1px solid #e8e8e8; */
+    /* background: #fff; */
+    font-size: 14px;
+    border: none;
+    border-bottom: 2px solid #d1cdff !important;
+  }
+  
+  .socialprofile span {
+    color: white !important;
+  }
+  
+  .vue-input-tag-wrapper .input-tag {
+    background-color: #f73164 !important;
+    border-radius: 6px !important;
+    border: 1px solid #d6dae3 !important;
+    color: white !important;
+    display: inline-block !important;
+    font-size: 13px !important;
+    font-weight: 400 !important;
+    margin-bottom: 4px !important;
+    margin-right: 4px !important;
+    padding: 3px !important;
+  }
+  
+  .vue-input-tag-wrapper .input-tag .remove {
+    cursor: pointer !important;
+    font-weight: 700 !important;
+    color: #dce1e6 !important;
+  }
+  
+  .leaflet-control-zoom a {
+    color: white !important;
+    background: rgba(0, 0, 0, 0.5) !important;
+    transition: all 0.5s ease;
+  }
+  
+  .leaflet-control-zoom a:hover {
+    color: white !important;
+    background: rgba(0, 0, 0, 0.9) !important;
+  }
+  
+  .ql-editor {
+    height: 241px !important;
+  }
+  
+  .mt-element-ribbon .ribbon.ribbon-color-danger {
+    background-color: #ed6b75;
+    color: #fff;
+  }
+  
+  .mt-element-ribbon .ribbon.ribbon-clip {
+    left: -10px;
+    margin-left: 0;
+  }
+  
+  .mt-element-ribbon .ribbon {
+    padding: 0.5em 1em;
+    z-index: 5;
+    float: left;
+    margin: 10px 0 0 -2px;
+    clear: left;
+    position: relative;
+  }
+  
+  .wrap {
+    position: absolute;
+    right: 0;
+    top: 40%;
+    width: 350px;
+    left: 0;
+    margin: 0 auto;
+  }
+  
+  /* select starting stylings ------------------------------*/
+  .select {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    position: relative;
+    width: 350px;
+  }
+  
+  .select-text {
+    position: relative;
+    font-family: inherit;
+    background-color: transparent;
+    width: 350px;
+    padding: 10px 10px 10px 0;
+    font-size: 18px;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  
+  /* Remove focus */
+  .select-text:focus {
+    outline: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+  }
+  
+  /* Use custom arrow */
+  .select .select-text {
+    appearance: none;
+    -webkit-appearance: none;
+  }
+  
+  .select:after {
+    position: absolute;
+    top: 18px;
+    right: 10px;
+    /* Styling the down arrow */
+    width: 0;
+    height: 0;
+    padding: 0;
+    content: "";
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid rgba(0, 0, 0, 0.12);
+    pointer-events: none;
+  }
+  
+  /* LABEL ======================================= */
+  .select-label {
+    color: rgba(0, 0, 0, 0.26);
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    top: 10px;
+    transition: 0.2s ease all;
+  }
+  
+  /* active state */
+  .select-text:focus ~ .select-label,
+  .select-text:valid ~ .select-label {
+    color: #2f80ed;
+    top: -20px;
+    transition: 0.2s ease all;
+    font-size: 14px;
+  }
+  
+  /* BOTTOM BARS ================================= */
+  .select-bar {
+    position: relative;
+    display: block;
+    width: 350px;
+  }
+  
+  .select-bar:before,
+  .select-bar:after {
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #2f80ed;
+    transition: 0.2s ease all;
+  }
+  
+  .select-bar:before {
+    left: 50%;
+  }
+  
+  .select-bar:after {
+    right: 50%;
+  }
+  
+  /* active state */
+  .select-text:focus ~ .select-bar:before,
+  .select-text:focus ~ .select-bar:after {
+    width: 50%;
+  }
+  
+  /* HIGHLIGHTER ================================== */
+  .select-highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  
+  .leaflet-custom .map-height {
+    height: 325px !important;
+    z-index: 1;
+}
+
+.ng-value-container { 
+  background-color: white !important;
+}

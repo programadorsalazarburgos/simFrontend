@@ -1,0 +1,518 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 bgHead">
+      <div class="logoIdartes">
+        <img src="assets/img/idartes-logo.png" alt="Idartes" />
+      </div>
+      <div class="nombreUsuario">
+        <div class="fl"><img src="assets/img/ico-usuario.png" alt="" /></div>
+        <div class="fl">María Camila <span>Mi Perfil</span></div>
+        <div class="cl"></div>
+      </div>
+
+      <div class="iconosR">
+        <img src="assets/img/ico_lupa.png" alt="" /><img src="assets/img/ico_notificacion.png" alt="" /><img
+          src="assets/img/ico_estrella.png" alt="" /><img src="assets/img/ico_mensaje.png" alt="" />
+      </div>
+      <div class="cl"></div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">
+      <div class="pad"></div>
+      <img src="assets/img/foto_03.jpg" class="responsiveImagen" alt="" />
+      <div class="separador"></div>
+      <div class="cajaSombra">
+        <div class="tit1 centro">
+          Caracterización <i class="far fa-edit"></i>
+        </div>
+        <div class="tit2">Área artística</div>
+        <div class="categorias">
+          <div class="form-group input-material" style="position: relative;margin-top: 13px !important;">
+            <select class="form-control" id="personality">
+              <option value=" 0" disabled>Areas</option>
+              <option>Musica</option>
+              <option>Teatro</option>
+            </select>
+          </div>
+
+          <div class="cl"></div>
+        </div>
+
+        <div class="tit2">Sub Área artística</div>
+        <div class="categorias">
+          <ng-select [items]="cars" bindLabel="name" placeholder="Selecciona sub Áreas" appendTo="body"
+            [multiple]="true" [(ngModel)]="subArea">
+          </ng-select>
+        </div>
+
+        <div class="tit2">Rol artístico</div>
+        <div class="categorias">
+          <ng-select [items]="cars" bindLabel="name" placeholder="Selecciona sub Áreas" appendTo="body"
+            [multiple]="true" [(ngModel)]="rolArtistico">
+          </ng-select>
+        </div>
+      </div>
+
+      <div class="separador"></div>
+      <div class="cajaSombra">
+        <div class="tit1 centro">Servicios <i class="far fa-edit"></i></div>
+        <div class="pad"></div>
+        <div class="categorias">
+          <tag-input [(ngModel)]='items' [maxItems]='5' theme='dark'></tag-input>
+        </div>
+      </div>
+      <div class="separador"></div>
+      <div class="redesS">
+        <a href=""><img src="assets/img/redes-face.png" alt="" /></a>
+        <a href=""><img src="assets/img/redes-insta.png" alt="" /></a>
+        <a href=""><img src="assets/img/redes-twt.png" alt="" /></a>
+        <a href=""><img src="assets/img/redes-whats.png" alt="" /></a>
+        <a href=""><img src="assets/img/redes-tok.png" alt="" /></a>
+        <a href=""><img src="assets/img/redes-youtube.png" alt="" /></a>
+      </div>
+
+      <div class="separador"></div>
+      <div class="cajaColor">
+        <div class="tit1 blanco centro">
+          Contacto <a (click)="modalOpen(modalContacto)"><i class="far fa-edit" style="color: white;"></i></a>
+        </div>
+        <div class="contactTXT">
+          <div><i class="fas fa-mobile-alt"></i> 321 555 5555</div>
+          <div><i class="far fa-envelope"></i> camilahernadez@gmail.com</div>
+          <div><i class="fas fa-globe"></i> www.camilahernadez.com</div>
+        </div>
+      </div>
+
+      <div class="separador"></div>
+      <div class="cajaSombra">
+        <div class="tit1 centro">Ubicación</div>
+        <div class="pad"></div>
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15907.808984016234!2d-74.0739698!3d4.602575!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa4f1d2055b6f39af!2sIDARTES!5e0!3m2!1ses!2sco!4v1629397797027!5m2!1ses!2sco"
+            width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="tNombre">
+        María Camila Sotelo Hernández<span>Artista</span>
+      </div>
+      <div class="tit1">Biografía</div>
+      <div class="txtBio">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+        cursus vehicula nibh in tincidunt. Donec interdum turpis metus, sed
+        tincidunt odio dignissim id. Integer facilisis at mauris id feugiat.
+        Etiam porta vel nunc nec tempus. Etiam porttitor, elit in eleifend
+        elementum, nisi ante interdum augue, vitae accumsan dolor nulla nec
+        velit. Vivamus quis dolor velit. Nullam cursus a libero at feugiat.
+        Aenean ante tortor, malesuada in arcu vel, hendrerit suscipit erat. Nam
+        blandit congue accumsan. Suspendisse aliquet neque id augue consequat
+        mattis ac ut sapien.
+      </div>
+      <div class="editBio">
+        <a (click)="modalOpen(mymodal)"><i class="far fa-edit"></i> Editar biografía</a>
+      </div>
+      <div class="pad"></div>
+      <div class="MiCalificacion">
+        <!-- <div class="fl" style="padding-right: 10px; padding-top: 5px">
+          Mi Calificación
+        </div> -->
+        <div class="calificaStar"><a href="#"></a></div>
+        <div class="calificaStar"><a href="#"></a></div>
+        <div class="calificaStar"><a href="#"></a></div>
+        <div class="calificaStar"><a href="#"></a></div>
+        <div class="calificaStar"><a href="#"></a></div>
+        <div class="cl"></div>
+      </div>
+
+      <a class="btn btn-primary btn-lg" href="#" role="button"><i class="far
+          fa-edit"></i> Eventos</a>&nbsp;
+      <a class="btn btn-primary btn-lg" href="dashboard/evento" role="button"><i class="far
+          fa-edit"></i> Crear un evento</a>
+      <div class="separador"></div>
+      <div class="tit1">Próximos eventos para ti</div>
+
+      <div class="cajaSombra">
+        <div class="eventoL">
+          <div class="fechaDia">12</div>
+          <div class="fechaMes">
+            Dic
+            <div class="separadia"></div>
+            2021
+          </div>
+          <div class="cl"></div>
+          <div class="eventoHora">12:00 m</div>
+          <div class="eventoInscritos">
+            <img src="assets/img/bt-inscribete.png" alt="" /> 200 inscritos
+          </div>
+        </div>
+        <div class="eventoC">
+          <div class="eventoTit">Rock al Parque</div>
+          <div class="eventoTXT">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+            ipsum suspendisse ultrices gravida.
+            <div>
+              <strong>Lugar:</strong> <a href="#">Link o lugar del evento</a>
+            </div>
+            <div>
+              <strong>Organiza:</strong> <a href="#">Nombre del organizador</a>
+            </div>
+          </div>
+        </div>
+        <div class="eventoIMG">
+          <img src="assets/img/evento120x120.jpg" alt="" />
+        </div>
+        <div class="cl"></div>
+      </div>
+
+      <div class="cajaSombra">
+        <div class="eventoL">
+          <div class="fechaDia">31</div>
+          <div class="fechaMes">
+            Ago
+            <div class="separadia"></div>
+            2022
+          </div>
+          <div class="cl"></div>
+          <div class="eventoHora">12:00 m</div>
+
+          <div class="eventoInscritos">
+            <img src="assets/img/bt-inscribete.png" alt="" /> 200 inscritos
+          </div>
+        </div>
+        <div class="eventoC">
+          <div class="eventoTit">Festival Altavoz Medellín</div>
+          <div class="eventoTXT">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+            ipsum suspendisse ultrices gravida.
+            <div>
+              <strong>Lugar:</strong> <a href="#">Link o lugar del evento</a>
+            </div>
+            <div>
+              <strong>Organiza:</strong> <a href="#">Nombre del organizador</a>
+            </div>
+          </div>
+        </div>
+        <div class="eventoIMG">
+          <img src="assets/img/evento120x120.jpg" alt="" />
+        </div>
+        <div class="cl"></div>
+      </div>
+
+      <div class="cajaSombra">
+        <div class="eventoL">
+          <div class="fechaDia">31</div>
+          <div class="fechaMes">
+            Ago
+            <div class="separadia"></div>
+            2022
+          </div>
+          <div class="cl"></div>
+          <div class="eventoHora">12:00 m</div>
+
+          <div class="eventoInscritos">
+            <img src="assets/img/bt-inscribete.png" alt="" /> 200 inscritos
+          </div>
+        </div>
+        <div class="eventoC">
+          <div class="eventoTit">Festival Altavoz Medellín</div>
+          <div class="eventoTXT">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+            ipsum suspendisse ultrices gravida.
+            <div>
+              <strong>Lugar:</strong> <a href="#">Link o lugar del evento</a>
+            </div>
+            <div>
+              <strong>Organiza:</strong> <a href="#">Nombre del organizador</a>
+            </div>
+          </div>
+        </div>
+        <div class="eventoIMG">
+          <img src="assets/img/evento120x120.jpg" alt="" />
+        </div>
+        <div class="cl"></div>
+      </div>
+
+      <div class="cajaDestacado">
+        <div class="tit1 blanco centro">Contenido Destacado</div>
+        <div class="pad"></div>
+        <div class="videoDestacado">
+          <iframe width="100%" height="460" src="https://www.youtube.com/embed/1aZ34qjw_sg" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+            gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="pad"></div>
+        <div class="linkDestacado">
+          <a href="#">Link 1</a><a href="#">Link 2</a><a href="#">Link 3</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 centro">
+      <div class="cajaPOrtafolio">
+        <div class="tit1">Portafolio</div>
+        <div class="pad"></div>
+        <div><img src="assets/img/sube-portafolio.png" alt="" /></div>
+        <a class="btn btn-primary centro" (click)="modalOpen(modalPortafolio)"><i class="fas
+            fa-upload"></i> Subir Portafolio</a>&nbsp;
+        <a class="btn btn-primary centro" (click)="modalOpen(modalVerPortafolio)"><i class="fa fa-eye"></i> Ver
+          Portafolio</a>
+      </div>
+      <div class="separador"></div>
+
+      <!-- Inicio fecha-->
+      <div id="datepicker"></div>
+      <script>
+        $("datepicker").datepicker({
+          // Formato de la fecha
+          dateFormat: "dd/mm/yy",
+          // Primer dia de la semana - lunes
+          firstDay: 1,
+          // Días largo traducido
+          dayNames: [
+            "Domingo",
+            "Lunes",
+            "Martes",
+            "Miercoles",
+            "Jueves",
+            "Viernes",
+            "Sabado",
+          ],
+          // Dias cortos traducido
+          dayNamesMin: ["Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sa"],
+          // Nombres largos de los meses traducido
+          monthNames: [
+            "Enero",
+            "Febrero",
+            "Marzo",
+            "Abril",
+            "Mayo",
+            "Junio",
+            "Julio",
+            "Agosto",
+            "Septiembre",
+            "Octubre",
+            "Noviembre",
+            "Diciembre",
+          ],
+          // Nombres cortos de los meses traducido
+          monthNamesShort: [
+            "Ene",
+            "Feb",
+            "Mar",
+            "Abr",
+            "May",
+            "Jun",
+            "Jul",
+            "Ago",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec",
+          ],
+          // Al selecconar fecha, se escribe en el campo de texto
+          onSelect: function (dateText) {
+            $("#fecha").val(dateText);
+          },
+        });
+      </script>
+      <!-- Fin fecha-->
+      <div class="separador"></div>
+      <div class="cajaSombra">
+        <div class="tit1">Mis Colectivos</div>
+        <div class="pad"></div>
+        <div class="img100Caja">
+          <div class="img100">
+            <a href="#"><img src="assets/img/100x100.png" alt="" /></a>
+          </div>
+          <div class="txtimg100 azulBack">Nombre del Colectivo</div>
+          <div class="cl"></div>
+        </div>
+        <div class="img100Caja">
+          <div class="img100">
+            <a href="#"><img src="assets/img/100x100.png" alt="" /></a>
+          </div>
+          <div class="txtimg100 azulBack">Nombre del Colectivo</div>
+          <div class="cl"></div>
+        </div>
+        <div class="pad"></div>
+        <div><img src="assets/img/bt-inscribirse-a-colectivo.png" alt="" /></div>
+      </div>
+      <div class="separador"></div>
+      <div class="cajaColor2">
+        <div class="tit1 blanco">Espacios Culturales</div>
+        <div class="pad"></div>
+        <div class="img100Caja">
+          <div class="img100">
+            <a href="#"><img src="assets/img/100x100.png" alt="" /></a>
+          </div>
+          <div class="txtimg100 blanco">Nombre del espacio</div>
+          <div class="cl"></div>
+        </div>
+        <div class="img100Caja">
+          <div class="img100">
+            <a href="#"><img src="assets/img/100x100.png" alt="" /></a>
+          </div>
+          <div class="txtimg100 blanco">Nombre del espacio</div>
+          <div class="cl"></div>
+        </div>
+        <div class="pad"></div>
+        <div><img src="assets/img/bt-inscribisre-a-espacio.png" alt="" /></div>
+      </div>
+      <div class="separador"></div>
+      <div class="cajaSombra">
+        <div class="tit1">Empresas Eprendimientos</div>
+        <div class="pad"></div>
+        <div class="img100Caja">
+          <div class="img100">
+            <a href="#"><img src="assets/img/logo1.jpg" alt="" /></a>
+          </div>
+          <div class="txtimg100 azulBack">Nombre de la empresa</div>
+          <div class="cl"></div>
+        </div>
+        <div class="img100Caja">
+          <div class="img100">
+            <a href="#"><img src="assets/img/logo1.jpg" alt="" /></a>
+          </div>
+          <div class="txtimg100 azulBack">Nombre de la empresa</div>
+          <div class="cl"></div>
+        </div>
+        <div class="pad"></div>
+        <div><img src="assets/img/bt-inscribirse-empresa.png" alt="" /></div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 footerIdartes">Logos Footer</div>
+  </div>
+</div>
+
+
+<!-- Modal Biografia -->
+<ng-template #mymodal let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Biografia</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">×</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="card m-12">
+      <div class="card-body">
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+          <div class="form-row">
+            <div class="form-group col-12">
+              <label>Biografia</label>
+              <textarea type="text" formControlName="biografia" class="form-control"
+                [ngClass]="{ 'is-invalid': submitted && f.biografia.errors }"></textarea>
+              <div *ngIf="submitted && f.biografia.errors" class="invalid-feedback">
+                <div *ngIf="f.biografia.errors.required">Campo requerido</div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary">Registrar</button>
+            <button class="btn btn-secondary" type="reset">Limpiar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</ng-template>
+<!-- Modal Biografia -->
+
+<!-- Modal Subir Portafolio -->
+<ng-template #modalPortafolio let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Subir Mi Portafolio</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">×</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="card m-12">
+      <div class="card-body">
+        <form class="form-bookmark needs-validation">
+          <div class="row g-2">
+            <div class="mb-3 mt-0 col-md-12">
+              <label for="bm-weburl">Portafolio PDF</label>
+              <input type="file" ref="fileupload" name="filename" class="form-control" style="border:0!important;">
+            </div>
+            <div class="mb-3 mt-0 col-md-12">
+              <label for="bm-weburl">Url Web</label>
+              <input class="form-control" placeholder="https://www.youtube.com/" name="" id="" cols="30" rows="10">
+            </div>
+          </div>
+          <input id="index_var" type="hidden" value="6">
+          <button class="btn btn-secondary" id="Bookmark" type="submit">Guardar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</ng-template>
+<!-- Modal Portafolio -->
+<!-- Modal Ver Portafolio -->
+<ng-template #modalVerPortafolio let-modal>
+  <div class="modal-header">
+    <h5 class="modal-title" id="modal-basic-title">Mi Portafolio</h5>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">×</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="card m-12">
+      <div class="card-body">
+        <div class="row g-2">
+          <div class="mb-3 mt-0 col-md-12">
+            <label for="bm-weburl">Portafolio PDF &nbsp;</label>
+            <a target="_blank" class="btn btn-secondary"><i class="fas fa-download" aria-hidden="true"></i></a>&nbsp;
+            <label for="bm-weburl">Portafolio Url &nbsp;</label>
+            <a target="_blank" class="btn btn-success"><i class="icofont icofont-link"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>
+<!-- Modal Portafolio -->
+<!-- Modal Contacto -->
+<ng-template #modalContacto let-modal>
+  <div class="modal-header">
+    <h5 class="modal-title" id="modal-basic-title">Datos Contacto</h5>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">×</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="card m-12">
+      <div class="card-body">
+        <form class="form-bookmark needs-validation" novalidate="">
+          <div class="row g-2">
+            <div class="mb-3 mt-0 col-md-12">
+              <label for="bm-weburl">Telefono</label>
+              <input class="form-control" placeholder="Telefono" name="" id="" cols="30" rows="10">
+            </div>
+            <div class="mb-3 mt-0 col-md-12">
+              <label for="bm-weburl">Correo</label>
+              <input class="form-control" placeholder="Correo" name="" id="" cols="30" rows="10">
+            </div>
+            <div class="mb-3 mt-0 col-md-12">
+              <label for="bm-weburl">Pagina Web</label>
+              <input class="form-control" placeholder="Pagina Web" name="" id="" cols="30" rows="10">
+            </div>
+          </div>
+          <input id="index_var" type="hidden" value="6">
+          <button class="btn btn-secondary" id="Bookmark" type="submit">Guardar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</ng-template>
+<!-- Modal Portafolio -->
